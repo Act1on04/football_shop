@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Користувачі</title>
+</head>
+<body>
+<h2>Список користувачів</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Ім'я</th>
+        <th>Роль</th>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}">1</td>
+        <td th:text="${user.username}">admin</td>
+        <td th:text="${user.roles}">ADMIN</td>
+    </tr>
+</table>
+</body>
+</html>

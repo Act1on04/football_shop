@@ -1,2 +1,2 @@
-# football_shop
-Development of an online service for selling football paraphernalia and equipment
+# Football shop
+Розробка онлайн-сервісу продажу футбольної атрибутики та екіпіровки

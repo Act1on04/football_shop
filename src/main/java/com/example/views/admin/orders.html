@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Замовлення</title>
+</head>
+<body>
+<h2>Список замовлень</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Дата</th>
+        <th>Користувач</th>
+    </tr>
+    <tr th:each="order : ${orders}">
+        <td th:text="${order.id}">1</td>
+        <td th:text="${order.orderDate}">2025-05-30</td>
+        <td th:text="${order.user.username}">admin</td>
+    </tr>
+</table>
+</body>
+</html>

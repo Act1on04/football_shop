@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Відгуки</title>
+</head>
+<body>
+<h2>Список відгуків</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Автор</th>
+        <th>Коментар</th>
+    </tr>
+    <tr th:each="review : ${reviews}">
+        <td th:text="${review.id}">1</td>
+        <td th:text="${review.user.username}">user123</td>
+        <td th:text="${review.comment}">Гарний товар</td>
+    </tr>
+</table>
+</body>
+</html>

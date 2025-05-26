@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Товари</title>
+</head>
+<body>
+<h2>Список товарів</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Назва</th>
+        <th>Ціна</th>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.id}">1</td>
+        <td th:text="${product.name}">Назва</td>
+        <td th:text="${product.price}">1000</td>
+    </tr>
+</table>
+</body>
+</html>
